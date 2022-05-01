@@ -24,7 +24,13 @@ sort($list);
 print_r($list);
 echo "<br>";
 
+$found = in_array(123, $list);
 
+	if ($found) {
+		echo "You found it!";
+	} else {
+		echo "Sorry not found!";
+	}
 ?>
     
 </body>
