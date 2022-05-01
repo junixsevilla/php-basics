@@ -49,7 +49,7 @@ echo "First result: " . $result;
 echo "<br>";
 echo "<br>";
 
-// Using the same variable and ang use it one of the parameter to calculate new result
+// Using the same variable and use it one of the parameter to calculate new result
 $result = calculate(10, $result);
 echo "Second result: " . $result;
 echo "<br>";
