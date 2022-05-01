@@ -22,14 +22,26 @@ echo "I am a beginner. <br/>";
 }
 
 // for loop
+echo "<br>";
 for ($i=1; $i <=10; $i++) {
 echo $i . "<br/>";
 }
 
+// foreach loop, works with array
+
+$numbers = array(10,20,30,40,60,80);
+
+echo "<br> Numbers from the array: ";
+foreach($numbers as $number) {
+	echo $number . "<br>";
+
+}
+
 //switch
 
-$rating = 100;
+$rating = 90;
 
+echo "<br>";
 switch($rating) {
 	case 100:
 	echo "You're a genius!";
