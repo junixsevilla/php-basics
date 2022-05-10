@@ -1,22 +1,4 @@
-<?php
-if (isset($_POST["submit"])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
 
-    echo "Submit button was clicked. <br>";
-    echo "Your username is ". $username . "<br>";
-    echo "Your password is ". $password . "<br>";
-}
-
-$connection= mysqli_connect('localhost', 'root', '', 'test');
-
-if ($connection) {
-    echo "You are connected to the database.";
-} else {
-    die ("Not connected");
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +9,7 @@ if ($connection) {
 </head>
 <body>
 
-<form action="" method="post">
+<form action="form_process.php" method="post">
     <input type="text" name="username" id="username" placeholder="Username">
     <input type="password" name="password" id="password" placeholder="Password">
     <input type="submit" value="Submit" name="submit">
